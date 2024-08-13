@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font choice */
+    background-color: #eef2f7; /* Soft, modern background color */
+    color: #333; /* Overall text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2c3e50; /* Deep blue color for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.navbar-brand {
+    font-weight: 700; /* Bolder text */
+    color: #f39c12 !important; /* Accent color */
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    color: #ecf0f1 !important;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f39c12; /* Hover effect */
+    color: #fff !important;
+    border-radius: 4px;
+}
+
+/* Jumbotron Styles */
+.jumbotron {
+    background: linear-gradient(135deg, #3498db, #2ecc71); /* Diagonal gradient for modern effect */
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Typography */
+h1, h2 {
+    margin-top: 30px;
+    color: #2c3e50; /* Deep blue color */
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    margin-top: 15px;
+    color: #7f8c8d; /* Muted text color */
+    text-align: justify;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 4px solid #f39c12; /* Accent color for the top border */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Custom Button Styles */
+.btn-custom {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #e67e22; /* Slightly darker shade on hover */
+    color: #fff;
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jumbotron, h1, h2, p, .btn-custom {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .jumbotron {
+        padding: 40px 20px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+}
